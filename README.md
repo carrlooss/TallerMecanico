@@ -14,7 +14,7 @@ Cuando un vehículo llega al taller, el mecánico encargado le registrará una *
 Cuando se termine la revisión, se anota la fecha de finalización y ya no se podrá cambiar el número de horas de dicho trabajo, ni el precio del material.
 
 Las revisiones tendrán un precio, que se calcula como el resultante de multiplicar el número de **horas** empleadas por **30 €** más el número de **días** que el vehículo
-haya permanecido en el taller multiplicado por **10 €**.
+haya permanecido en el taller multiplicado por **10 €** más el **precio del material** empleado por **1.5 €**.
 
 El programa debe poder llevar una gestión de los clientes (añadir clientes, borrar clientes, buscar clientes por DNI, modificar clientes por su DNI y listar los clientes). 
 
@@ -87,7 +87,7 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 6. Crea el método `borrar` que borrará el turismo si este existe en la lista o lanzará una excepción en caso contrario.
 7. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
-#### Alquileres
+#### Revisiones
 1. Crea la clase `Revisiones` que gestionará una lista de revisiones (`Revision`) sin permitir elementos repetidos.
 2. Crea el **constructor por defecto** que simplemente creará la lista.
 3. Crea el método `get` que devolverá una nueva lista con los mismos elementos (no debe crear nuevas instancias).
@@ -155,7 +155,7 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 5. Crea los demás métodos que simplemente harán una llamada al correspondiente método del modelo.
 6. Realiza un **commit**.
 
-#### MainApp
+#### Main
 1. Crea la clase `Main` con un único método `main` que será el método de entrada a nuestra aplicación. Este método simplemente creará una vista, un modelo y un controlador, pasándoles las instancias antes creadas. Luego simplemente invocará al método `comenzar` del controlador.
 2. Realiza las pruebas que estimes oportunas y cuando consideres que todo es correcto, realiza el último **commit** y seguidamente realiza el **push** a tu repositorio remoto.
 

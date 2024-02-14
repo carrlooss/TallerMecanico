@@ -199,7 +199,7 @@
                         <body>1.5F</body>
                       </defaultValue>
                     </ownedAttribute>
-                    <ownedAttribute xmi:type="uml:Property" xmi:id="_rm_pwMWLEe6GV74yg1DxAg" name="FORMATO_FECHA" visibility="private" isLeaf="true" isStatic="true" type="_rm3t8cWLEe6GV74yg1DxAg" isUnique="false">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_rm_pwMWLEe6GV74yg1DxAg" name="FORMATO_FECHA" visibility="package" isLeaf="true" isStatic="true" type="_rm3t8cWLEe6GV74yg1DxAg" isUnique="false">
                       <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_rm_pwcWLEe6GV74yg1DxAg" name="defaultValue">
                         <language>JAVA</language>
                         <body>DateTimeFormatter.ofPattern(&quot;dd/MM/yyyy&quot;)</body>
@@ -533,7 +533,7 @@
                       <ownedParameter xmi:type="uml:Parameter" xmi:id="__VLroMWLEe6GV74yg1DxAg" name="modelo" type="_jXQBIMWLEe6GV74yg1DxAg"/>
                       <ownedParameter xmi:type="uml:Parameter" xmi:id="__VM5wMWLEe6GV74yg1DxAg" name="matricula" type="_jXQBIMWLEe6GV74yg1DxAg"/>
                     </ownedOperation>
-                    <ownedOperation xmi:type="uml:Operation" xmi:id="__VOu8MWLEe6GV74yg1DxAg" name="valoidarMarca" visibility="private" method="__VQkIMWLEe6GV74yg1DxAg">
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="__VOu8MWLEe6GV74yg1DxAg" name="validarMarca" visibility="private" method="__VQkIMWLEe6GV74yg1DxAg">
                       <ownedParameter xmi:type="uml:Parameter" xmi:id="__VP9EMWLEe6GV74yg1DxAg" name="marca" type="_jXQBIMWLEe6GV74yg1DxAg"/>
                     </ownedOperation>
                     <ownedOperation xmi:type="uml:Operation" xmi:id="__VRyQMWLEe6GV74yg1DxAg" name="validarModelo" visibility="private" method="__VTncMWLEe6GV74yg1DxAg">
@@ -1590,7 +1590,7 @@
         <ownedComment xmi:type="uml:Comment" xmi:id="_4v1gkMWREe6GV74yg1DxAg" annotatedElement="_L0AKgMWREe6GV74yg1DxAg">
           <body>- numeroOpcion: int
 - mensaje: String
-- &lt;&lt;static>> opciones: Map &lt;Integer, String>
+- &lt;&lt;static>> opciones: Map &lt;Integer, Opcion>
 ---------------------------------------------------------
 - Opcion( numeroOpcion: int, mensaje: String)
 + &lt;&lt;static>> esValida(numeroOpcion: int): boolean
