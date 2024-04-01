@@ -166,7 +166,7 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 - Se debe utilizar la clase Entrada para realizar la entrada por teclado que se encuentra como dependencia de nuestro proyecto en la librería entrada.
 - El programa debe pasar todas las pruebas que van en el esqueleto del proyecto y toda entrada del programa será validada, para evitar que el programa termine abruptamente debido a una excepción.
 - La corrección ortográfica tanto en los comentarios como en los mensajes que se muestren al usuario.
->>>>>>> sprint_inicial
 
 
-- [Sprint inicial](../../tree/sprint_inicial)
+- [sprint inicial](../../tree/sprint_inicial): Primera versión con los requerimientos iniciales para nuestro taller mecánico.
+- [refactorizacion_herencia](../../tree/refactorizacion_herencia): Segunda versión en la que refactorizamos la anterior aplicando patrones de diseño y mejorando el diseño en general. También se añaden nuevos requerimientos.
