@@ -1,3 +1,4 @@
+
 package org.iesalandalus.programacion.tallermecanico.modelo.dominio;
 
 import org.junit.jupiter.api.BeforeAll;
@@ -228,3 +229,4 @@ class RevisionTest {
     }
 
 }
+
